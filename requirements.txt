@@ -1,0 +1,18 @@
+# Python 3.10 required (see README "Environment" section for why).
+#
+# `transformers` is NOT installed from this file -- it comes from the OFA-Sys
+# fork, which adds the OFAModel/OFATokenizer classes BiomedGPT's checkpoints
+# need. Set it up with:
+#   git clone --single-branch --branch feature/add_transformers https://github.com/OFA-Sys/OFA.git
+#   pip install -e ./OFA/transformers/
+# then apply the two patches documented in README.md ("Two bugs found and
+# fixed in the vendored OFA code") before first use.
+
+torch
+torchvision
+pillow
+huggingface_hub
+datasets
+sacrebleu
+rouge-score
+sacremoses

@@ -1,0 +1,23 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Model weights and vendored external repos (large, reproducible via README instructions)
+checkpoints/
+OFA/
+BiomedGPT/
+
+# Sample CXR images (large; manifests are tracked, regenerate images via README's Test data instructions)
+data/iu_xray_sample/*.png
+data/iu_xray_sample_100/*.png
+
+# OS/editor cruft
+.DS_Store
+.ipynb_checkpoints/
+
+# Claude Code local session/tool config -- not project content
+.claude/
+
+# Colab-generated notebook metadata that changes on every run without real content changes
+notebooks/.ipynb_checkpoints/

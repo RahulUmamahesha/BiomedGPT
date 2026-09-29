@@ -1,0 +1,310 @@
+/Users/rahulhu/Documents/Voluntering/Iheal/Biomedgpt/venv/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/native/TensorShape.cpp:4223.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Loaded 100 rows from data/iu_xray_sample_100/manifest.csv
+Loading BiomedGPT model from checkpoints/iu-xray-finetuned...
+Generation params: {'do_sample': True, 'num_beams': 1, 'top_p': 0.9, 'temperature': 0.7, 'no_repeat_ngram_size': 3, 'max_length': 64}
+checkpoints/iu-xray-finetuned
+<super: <class 'OFATokenizer'>, <OFATokenizer object>>
+Model loaded. Running inference...
+[1/100] iu_xray_000
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The cardiac silhouette and mediastinum size are within normal limits. There is no pulmonary edema. There is no focal consolidation. There are no XXXX of a pleural effusion. There is no evidence of pneumothorax.
+[2/100] iu_xray_001
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Borderline cardiomegaly. Midline sternotomy XXXX. Enlarged pulmonary arteries. Clear lungs. Inferior XXXX XXXX XXXX.
+[3/100] iu_xray_002
+  generated: 1 No acute cardiopulmonary disease 2 Left midlung opacity most suggestive of scarring or subsegmental atelectasis The heart pulmonary rightsided pleural effusion is present The mediastinal contour is within normal limits The lungs are hyperexpanded consistent with emphysema The
+  truth:     There are diffuse bilateral interstitial and alveolar opacities consistent with chronic obstructive lung disease and bullous emphysema. There are irregular opacities in the left lung apex, that could represent a cavitary lesion in the left lung apex.There are streaky opacities in the right upper lobe, XXXX scarring. The cardiomediastinal silhouette is normal in size and contour. There is no pneumothorax or large pleural effusion.
+[4/100] iu_xray_003
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally The cardiomediastinal silhouette is normal in size and contour and stable No focal consolidation pneumothorax or large pleural effusion No acute bony abnormality
+  truth:     The cardiomediastinal silhouette and pulmonary vasculature are within normal limits. There is no pneumothorax or pleural effusion. There are no focal areas of consolidation. Cholecystectomy clips are present. Small T-spine osteophytes. There is biapical pleural thickening, unchanged from prior. Mildly hyperexpanded lungs.
+[5/100] iu_xray_004
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     Heart size and mediastinal contour are within normal limits. There is no focal airspace consolidation or suspicious pulmonary opacity. No pneumothorax or large pleural effusion. Mild degenerative change of the thoracic spine.
+[6/100] iu_xray_005
+  generated: 1 No acute cardiopulmonary abnormality 2 Right middle lobe airspace disease and effusion suggestive of right middle lobe pneumonia The tracheostomy tube is in the right upper quadrant The heart size is normal The mediastinal contour is within normal limits The lungs are clear
+  truth:     The cardiac contours are normal. XXXX basilar atelectasis. The lungs are clear. Thoracic spondylosis. Lower cervical XXXX arthritis.
+[7/100] iu_xray_006
+  generated: No acute cardiopulmonary disease The heart is normal in size and contour The lungs are clear without evidence of infiltrate The lungs appear clear without pneumothorax or effusion
+  truth:     The heart, pulmonary XXXX and mediastinum are within normal limits. There is no pleural effusion or pneumothorax. There is no focal air space opacity to suggest a pneumonia. There is an interim XXXX cervical spinal fusion partly evaluated.
+[8/100] iu_xray_007
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The XXXX examination consists of frontal and lateral radiographs of the chest. The cardiac silhouette is not enlarged. There has been apparent interval increase in low density convexity at the left cardiophrenic XXXX. Calcified granuloma is again seen in the right upper lobe. There is no consolidation, pleural effusion or pneumothorax.
+[9/100] iu_xray_008
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The cardiomediastinal silhouette is within normal limits for size and contour. The lungs are normally inflated without evidence of focal airspace disease, pleural effusion, or pneumothorax. Stable calcified granuloma within the right upper lung. No acute bone abnormality..
+[10/100] iu_xray_009
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Cardiomediastinal silhouette and pulmonary vasculature are within normal limits. Lungs are clear. No pneumothorax or pleural effusion. No acute osseous findings.
+[11/100] iu_xray_010
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     Lungs are clear bilaterally. Cardiac and mediastinal silhouettes are normal. Pulmonary vasculature is normal. No pneumothorax or pleural effusion. No acute bony abnormality.
+[12/100] iu_xray_011
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The cardiac silhouette is borderline enlarged. Otherwise, there is no focal opacity. Mediastinal contours are within normal limits. There is no large pleural effusion. No pneumothorax.
+[13/100] iu_xray_012
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally The cardiomediastinal silhouette is within normal limits No pneumothorax or pleural effusion
+  truth:     Heart size within normal limits, stable mediastinal and hilar contours. Mild hyperinflation appears similar to prior. No focal alveolar consolidation, no definite pleural effusion seen. Scattered chronic appearing irregular interstitial markings, no typical findings of pulmonary edema.
+[14/100] iu_xray_013
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Cardiomediastinal silhouette and pulmonary vasculature are within normal limits. Lungs are clear. No pneumothorax or pleural effusion. Evidence of prior granulomatous disease. No acute osseous findings.
+[15/100] iu_xray_014
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     No focal areas of consolidation. No suspicious pulmonary opacities. Heart size within normal limits. No pleural effusions. No evidence of pneumothorax. Osseous structures intact.
+[16/100] iu_xray_015
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Heart size within normal limits. No focal alveolar consolidation, no definite pleural effusion seen. No typical findings of pulmonary edema. No pneumothorax.
+[17/100] iu_xray_016
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     Heart size is normal. There is tortuosity of the thoracic aorta, stable compared with prior. No focal airspace disease or effusion. No pleural effusions or pneumothoraces. Degenerative changes in the thoracic spine.
+[18/100] iu_xray_017
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The cardiac and mediastinal silhouettes are unremarkable. The lungs are well expanded and clear. There are no focal air space opacities. There is no pneumothorax or effusion. There are mild degenerative changes of the thoracic spine.
+[19/100] iu_xray_018
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     The lungs are clear, and without focal air space opacity. The cardiomediastinal silhouette is normal in size and contour, and stable. There is no pneumothorax large pleural effusion.
+[20/100] iu_xray_019
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart size and pulmonary vascularity appear within normal limits. The lungs are free of focal airspace disease. No pleural effusion or pneumothorax is seen.
+[21/100] iu_xray_020
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Cardiomediastinal silhouette is within normal limits of size and appearance. The pulmonary vascularity is unremarkable. Lungs are expanded and clear of airspace disease. Negative for pneumothorax or pleural effusion. Limited bone evaluation reveals no acute abnormality. There is incompletely evaluated lumbar levoscoliosis.
+[22/100] iu_xray_021
+  generated: 1 Left lower lobe airspace disease and bilateral pleural effusions 2 Right mid lung airspace disease on the frontal view 3 days after admission The heart size is upper limits of normal The lungs are clear No pneumothorax or effusions
+  truth:     The heart is within normal limits in size. Surgical suture material projects over the right lung apex. The lungs are hyperlucent and hyperinflated compatible with emphysema. There is left lower lobe airspace disease identified. There is moderate left pleural effusion and small right pleural effusion. No visualized pneumothorax.
+[23/100] iu_xray_022
+  generated: No acute cardiopulmonary disease The heart pulmonary vasculature and mediastinal contours are within normal limits The lungs are clear without evidence of infiltrate No pneumothorax or effusion
+  truth:     The cardiac contours are normal. The lungs are clear. Thoracic spondylosis.
+[24/100] iu_xray_023
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally The cardiomediastinal silhouette is normal in size and contour and stable No focal consolidation pneumothorax or large pleural effusion No acute bone abnormality
+  truth:     Lungs are overall hyperexpanded with flattening of the diaphragms. No focal consolidation. No pleural effusions or pneumothoraces. Heart and mediastinum of normal size and contour. Degenerative changes in the thoracic spine.
+[25/100] iu_xray_024
+  generated: 1 Cardiomegaly with diffuse interstitial opacities 2 No evidence of acute cardiopulmonary disease The cardiac silhouette is moderately enlarged stable from prior exam and may represent chronic pulmonary disease fibrosis with bilateral pleural effusions and associated airspace disease No pneumothorax or effusion
+  truth:     Bilateral patchy pulmonary opacities noted. Interval improvement in left base consolidative opacity. Pulmonary vascular congestion again noted. Stable enlarged cardiomediastinal silhouette. Stable left XXXX. No evidence of pneumothorax. No large pleural effusions.
+[26/100] iu_xray_025
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally The cardiomediastinal silhouette is within normal limits No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     Lungs are clear without focal consolidation, effusion, or pneumothorax. Normal heart size. Negative for pneumoperitoneum. Bony thorax and soft tissue grossly unremarkable
+[27/100] iu_xray_026
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart is normal in size. The mediastinum is unremarkable. Mild blunting of right costophrenic XXXX. The lungs are otherwise grossly clear.
+[28/100] iu_xray_027
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally with no focal infiltrate pleural effusion or pneumothoraces Cardiomediastinal silhouette is within normal limits No acute bony or soft tissue abnormality
+  truth:     Cardiac and mediastinal contours are within normal limits. The lungs are clear. Left axillary surgical clips. Bony structures are intact.
+[29/100] iu_xray_028
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     The heart is normal in size and contour. The lungs are clear, without evidence of infiltrate. There is no pneumothorax or effusion.
+[30/100] iu_xray_029
+  generated: 1 No acute cardiopulmonary disease 2 No suspicious pulmonary nodules or masses No evidence of disease The heart pulmonary nodule is within normal limits The lungs are clear without evidence of infiltrate No pleural effusion or pneumothorax
+  truth:     The heart size and cardiomediastinal silhouette are normal. There is hyperexpansion of the lungs with flattening of the hemidiaphragms. There is no focal airspace opacity, pleural effusion, or pneumothorax. There multilevel degenerative changes of thoracic spine.
+[31/100] iu_xray_030
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The lungs are clear bilaterally. Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion.. Cardio mediastinal silhouette is unremarkable. Visualized osseous structures of the thorax are without acute abnormality.
+[32/100] iu_xray_031
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     The heart is normal in size. The mediastinum is unremarkable. XXXX XXXX opacities in right mid lung. The lungs are otherwise grossly clear.
+[33/100] iu_xray_032
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Lungs are clear. There is no pneumothorax or pleural effusion. The heart and mediastinum are within normal limits. Bony structures are intact.
+[34/100] iu_xray_033
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart and lungs have XXXX XXXX in the interval. Both lungs are clear and expanded. Heart and mediastinum normal.
+[35/100] iu_xray_034
+  generated: 1 No acute cardiopulmonary disease 2 No evidence of pneumonia The lungs are clear The heart and pulmonary canines are normal The pleural spaces are clear
+  truth:     Mild hyperexpansion of the lungs. Numerous bilateral rib deformities. No focal airspace disease. Heart size is normal. No pneumothorax or effusion. Large, flowing anterior endplate osteophytes of the thoracic spine.
+[36/100] iu_xray_035
+  generated: 1 No acute cardiopulmonary abnormality 2 Left mid lung subsegmental atelectasis versus scar 3 left base airspace disease The lungs are hyperexpanded with flattened diaphragms and basilar subseous atelectases The cardiomediastinal silhouette is within normal limits for
+  truth:     The cardiomediastinal silhouette is stable in appearance. No interval change in the diffuse increased bilateral pulmonary interstitial markings, greatest in the peripheral aspect of the left lung and left lung base. These opacities appear slightly increased as compared to prior examination. Mild left-sided volume loss redemonstrated, unchanged. No pneumothorax or pleural effusion. The thoracic spine appears intact.
+[37/100] iu_xray_036
+  generated: No acute cardiopulmonary abnormality Heart size and mediastinal contours are normal Pulmonary vascularity is within normal limits No focal consolidation suspicious pulmonary opacity pneumothorax or definite pleural effusion No acute displaced rib fractures
+  truth:     The trachea is midline. The cardiomediastinal silhouette is normal. The lungs are clear, without evidence of focal infiltrate or effusion. There is no pneumothorax. The visualized bony structures reveal no acute abnormalities.
+[38/100] iu_xray_037
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart and lungs have XXXX XXXX in the interval. Both lungs are clear and expanded. Heart and mediastinum normal.
+[39/100] iu_xray_038
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart, pulmonary XXXX and mediastinum are within normal limits. There is no pleural effusion or pneumothorax. There is no focal air space opacity to suggest a pneumonia.
+[40/100] iu_xray_039
+  generated: 1 No acute cardiopulmonary abnormality 2 No evidence of active tuberculosis infection 2 No focal airspace consolidation or pleural effusion Heart size and mediastinal contour within normal limits Pulmonary vascularity is within normal ranges for focal airspace disease or pneumothorax or pleuritic pleural fluid The
+  truth:     Stable cardiomegaly with vascular prominence without overt edema. No focal airspace disease. No large pleural effusion or pneumothorax. The XXXX are intact.
+[41/100] iu_xray_040
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The cardiac and mediastinal contours are within normal limits. The lungs are well-inflated and clear. There is an 8mm nodule in the left lower lobe, XXXX calcified granuloma. There is no pneumothorax or effusion. Bony structures of the thorax are intact with minimal early degenerative change.
+[42/100] iu_xray_041
+  generated: No acute cardiopulmonary disease The lungs appear clear The heart and pulmonary arteries are normal The pleural spaces are clear The mediastinal contours are normal
+  truth:     The heart, pulmonary XXXX and mediastinum are within normal limits. There is no pleural effusion or pneumothorax. There is no focal air space opacity to suggest a pneumonia. There are degenerative changes of the thoracic spine. There is a calcified granuloma identified in the right suprahilar region. The aorta is mildly tortuous and ectatic. There is asymmetric right apical smooth pleural thickening. There are severe degenerative changes of the XXXX.
+[43/100] iu_xray_042
+  generated: Cardiomegaly with pulmonary edema superimposed on chronic interstitial lung changes No focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     A XXXX XXXX lung volumes. Lungs are clear without focal airspace disease. No pleural effusions or pneumothoraces. cardiomegaly. Degenerative changes in the spine.
+[44/100] iu_xray_043
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Heart size is normal and cardiomediastinal silhouette is normal. There are scattered calcified granulomas throughout both lung XXXX. Lungs are clear bilaterally otherwise. No bony or soft tissue abnormalities.
+[45/100] iu_xray_044
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart is normal size. The mediastinum is unremarkable. There is no pleural effusion, pneumothorax, or focal airspace disease. The XXXX are unremarkable.
+[46/100] iu_xray_045
+  generated: 1 Cardiomegaly without overt heart failure 2 Stable mild cardiometrophy and scattered chronic appearing interstitial markings with central pulmonary vascular congestion and bilateral basilar subsegmental atelectasis No focal airspace consolidation No pleural effusion or pneumothorax The visualized bony structures
+  truth:     There extremely low lung volumes. there is right basilar opacity. There is no pneumothorax. There is no large pleural effusion. Cardiac silhouette and mediastinal contours are within normal limits.
+[47/100] iu_xray_046
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally The cardiomediastinal silhouette is within normal limits No No pneumothorax or pleural effusion
+  truth:     The lungs are clear bilaterally. Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion.. Minimal right basilar subsegmental atelectasis noted. Cardio mediastinal silhouette is unremarkable. Tortuosity of the thoracic aorta noted. Scattered calcified granulomas are seen without evidence of active granulomatous/tuberculous process. Visualized osseous structures of the thorax are without acute abnormality.
+[48/100] iu_xray_047
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Lung lines remain low. However, no focal infiltrates are identified. Heart and pulmonary XXXX are normal.
+[49/100] iu_xray_048
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart is normal in size. The mediastinum is unremarkable. The lungs are clear.
+[50/100] iu_xray_049
+  generated: 1 No acute cardiopulmonary abnormality 2 No evidence of active tuberculosis infection 2 Right lobe subsegmental atelectasis versus scarring 3 images. heart size and mediastinal contours appear within normal limits The lungs are free of focal airspace disease No pleural effusion or pneumothorax
+  truth:     The tracheostomy tube tip is 5 cm above the carina. There are prominent diffuse bilateral interstitial opacities, stable from prior radiographs. There is no focal airspace consolidation. No pleural effusion. No pneumothorax. Heart size is within normal limits. There are mild degenerative changes of the spine.
+[51/100] iu_xray_050
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart is normal in size. The mediastinum is unremarkable. The lungs are clear. Mild scoliosis and degenerative changes of the thoracic spine noted.
+[52/100] iu_xray_051
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally The cardiomediastinal silhouette is within normal limits No pneumothorax or pleural effusion
+  truth:     The cardiac silhouette, mediastinum, and pulmonary vasculature are unremarkable. There is stable elevation of the left hemidiaphragm. Lungs are clear. No pleural fluid or pneumothorax is appreciated. Cholecystectomy clips are noted in the right upper quadrant.
+[53/100] iu_xray_052
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Stable appearance of hiatal hernia. Clear right lung XXXX.In the left superior lower lobe there is a 1.9 x 1.8 cm round area of density which has increased in size compared to prior chest radiograph and recommend a XXXX chest, abdomen and pelvis with contrast as this area is suspicious for potential malignancy. Normal cardiac contour. No pneumothorax or pleural effusion.
+[54/100] iu_xray_053
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally with no focal infiltrate pleural effusion or pneumothoraces Cardiomediastinal silhouette is within normal limits No acute bony or soft tissue abnormality
+  truth:     Status post XXXX sternotomy and CABG. Heart size is normal. Coronary vascular stent. The lungs are clear. There are no focal air space consolidations. No pleural effusions or pneumothoraces. The hilar and mediastinal contours are stable. Calcified mediastinal lymph XXXX. Normal pulmonary vascularity. Degenerative changes of the spine.
+[55/100] iu_xray_054
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Status post XXXX sternotomy and CABG. Heart size is normal. Coronary vascular stent. The lungs are clear. There are no focal air space consolidations. No pleural effusions or pneumothoraces. The hilar and mediastinal contours are stable. Calcified mediastinal lymph XXXX. Normal pulmonary vascularity. Degenerative changes of the spine.
+[56/100] iu_xray_055
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Stable flattening of the posterior diaphragm and scattered chronic appearing irregular interstitial markings with no focal alveolar consolidation. Stable cardiomediastinal silhouette with normal heart size and aortic ectasia/tortuosity, stable mediastinal contours. No definite pleural effusion seen, no typical findings of pulmonary edema. Following spine ossifications and marginal osteophytes again noted.
+[57/100] iu_xray_056
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     2 images. Heart size upper limits of normal. Mediastinal contours are maintained. The patient is mildly rotated. There is a small to moderate sized right apical pneumothorax which measures approximately 2.0 cm. No focal airspace consolidation is seen. Left chest is clear. No definite displaced bony injury is seen. Results called XXXX. XXXX XXXX p.m. XXXX, XXXX.
+[58/100] iu_xray_057
+  generated: No acute cardiopulmonary abnormality The cardiomediastinal silhouette and pulmonary vasculature are within normal limits Lungs are clear No pneumothorax or pleural effusion No acute bony findings
+  truth:     The XXXX examination consists of frontal and lateral radiographs of the chest. The cardiomediastinal contours are within normal limits. Pulmonary vascularity is within normal limits. No focal consolidation, pleural effusion, or pneumothorax identified. Deformity of the right clavicle related to remote XXXX is again seen. Visualized upper abdomen grossly unremarkable.
+[59/100] iu_xray_058
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Chest. Both lungs are clear and expanded with no pleural air collections or parenchymal consolidations. Heart and mediastinum remain normal. Lumbosacral spine. XXXX, disc spaces, and alignment are normal. Sacrum and sacroiliac joints are normal.
+[60/100] iu_xray_059
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     There are low volumes with bronchovascular crowding. No focal infiltrate or effusion. Heart and mediastinal contours within normal limits. No displaced fracture identified.
+[61/100] iu_xray_060
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart is normal in size and contour. The lungs are clear, without evidence of infiltrate. There is no pneumothorax or effusion.
+[62/100] iu_xray_061
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Sequelae of old granulomatous disease. Lungs are clear without focal airspace disease. No pleural effusions or pneumothoraces. Heart and mediastinum of normal size and contour.
+[63/100] iu_xray_062
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally The cardiomediastinal silhouette is within normal limits No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     The heart is upper limits of normal in size. The lungs are clear, without evidence of infiltrate. There is no pneumothorax or effusion.
+[64/100] iu_xray_063
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Lungs are clear without focal consolidation, effusion, or pneumothorax. Normal heart size. Bony thorax and soft tissues grossly unremarkable.
+[65/100] iu_xray_064
+  generated: 1 No acute pulmonary abnormality 2 Stable postoperative changes with mild cardiomegaly and bypass graft in situ No pleural effusion or pneumothorax Heart size is mildly enlarged Pulmonary vascularity is within normal limits
+  truth:     The heart size is stable. The aorta is ectatic and atherosclerotic but stable. XXXX sternotomy XXXX are again noted. The scarring in the left lower lobe is again noted and unchanged from prior exam. There are mild bilateral prominent lung interstitial opacities consistent with emphysematous disease. The calcified granulomas are stable.
+[66/100] iu_xray_065
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally with no focal infiltrate pleural effusion or pneumothoraces Cardiomediastinal silhouette is within normal limits No acute bony or soft tissue abnormality
+  truth:     Apparent scarring within the lingula. Lungs are otherwise clear. No pleural effusions or pneumothoraces. Heart and mediastinum of normal size and contour.
+[67/100] iu_xray_066
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The cardiomediastinal silhouette and vasculature are within normal limits for size and contour. The lungs are normally inflated and clear. Osseous structures are within normal limits for patient age.
+[68/100] iu_xray_067
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally The cardiomediastinal silhouette is within normal limits No pneumothorax or pleural effusion
+  truth:     Heart size and mediastinal contour within normal limits. No focal airspace consolidation, pneumothorax, or large pleural effusion. No acute osseous abnormality.
+[69/100] iu_xray_068
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Heart size and mediastinal contour within normal limits. No focal airspace consolidation, pneumothorax, or large pleural effusion. No acute osseous abnormality.
+[70/100] iu_xray_069
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     No airspace disease, effusion or noncalcified nodule. Normal heart size and mediastinum. Left axillary surgical clips unchanged Visualized XXXX of the chest XXXX are within normal limits.
+[71/100] iu_xray_070
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     There are low lung volumes with bronchovascular crowding as a result. No pleural effusion, pneumothorax or focal airspace disease. Cardiomediastinal silhouette is within normal limits. No free subdiaphragmatic air.
+[72/100] iu_xray_071
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     There are scattered calcified granulomas. No focal infiltrate. No pleural effusion or pneumothorax. Heart size and mediastinal contour are within normal limits. There are degenerative changes of the spine.
+[73/100] iu_xray_072
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     Heart size is within normal limits. No focal airspace consolidations. No pneumothorax or pleural effusion.
+[74/100] iu_xray_073
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally The cardiomediastinal silhouette is within normal limits No pneumothorax or pleural effusion
+  truth:     Heart size is within normal limits. No focal airspace consolidations. No pneumothorax or pleural effusion.
+[75/100] iu_xray_074
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     No focal airspace disease, pleural effusion or pneumothorax. Cardiomediastinal silhouette is within normal limits. No free subdiaphragmatic air.
+[76/100] iu_xray_075
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart size and mediastinal silhouette are within normal limits for contour. The lungs are clear. No pneumothorax or pleural effusions. The XXXX are intact.
+[77/100] iu_xray_076
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally The cardiomediastinal silhouette is within normal limits No pneumothorax or pleural effusion
+  truth:     The lungs are clear. There is no focal airspace consolidation. No pleural effusion or pneumothorax. Heart size and mediastinal contour are within normal limits. There are degenerative changes of the spine.
+[78/100] iu_xray_077
+  generated: No acute cardiopulmonary abnormality The cardiomediastinal silhouette and pulmonary vasculature are within normal limits No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     Minimal right-to-left cardiomediastinal shift. The cardiomediastinal silhouette is otherwise normal size and configuration. Pulmonary vasculature within normal limits. There is a moderate sized right pneumothorax. This measures 3.2 cm at the level the right apex.
+[79/100] iu_xray_078
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     Lungs are clear without focal consolidation, effusion, or pneumothorax. Normal heart size. Negative for pneumoperitoneum. Mild degenerative changes of the thoracic spine.
+[80/100] iu_xray_079
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Heart size, mediastinal contour, and pulmonary vascularity are similar to comparison exam and within normal limits. No focal consolidation, suspicious pulmonary opacity, pleural effusion, or pneumothorax. The visualized osseous structures appear intact.
+[81/100] iu_xray_080
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Heart size is normal No pneumothorax or pleural effusion Cardio mediastinal silhouette is within normal limits No acute bony or soft tissue abnormality
+  truth:     There is a single calcified granuloma in the right lung base. The lungs are otherwise grossly clear bilaterally. There is no pneumothorax or pleural effusion. Cardiac and mediastinal silhouettes are normal. There are cholecystectomy clips in the right upper quadrant of the abdomen. Small T-spine osteophytes are noted.
+[82/100] iu_xray_081
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The lungs are clear. The heart and pulmonary XXXX are normal. The pleural spaces are clear. The mediastinal contours are normal.
+[83/100] iu_xray_082
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     The cardiac contours are normal. The lungs are clear. Thoracic spondylosis.
+[84/100] iu_xray_083
+  generated: 1 No acute pulmonary abnormality The lungs and pleural spaces show no acute abnormality Heart size and pulmonary vascularity within normal limits
+  truth:     Frontal and lateral views of the chest show an unchanged cardiomediastinal silhouette. Reduced lung volumes with basilar atelectasis. No XXXX focal airspace consolidation or pleural effusion.
+[85/100] iu_xray_084
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Normal heart and mediastinum. Clear lungs. Trachea is midline. No pneumothorax. No pleural effusion. Radiopaque foreign body overlying left chest.
+[86/100] iu_xray_085
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     Both lungs are clear and expanded. Heart and mediastinum normal.
+[87/100] iu_xray_086
+  generated: 1 Cardiomegaly with mild interstitial edema and patchy bibasilar airspace disease right greater than left 2 No acute bony abnormalities 2 No pneumothorax or effusion identified The heart size is enlarged with mild central vascular prominence and patchinular interstitial prominence suggestive of pulmonary ed
+  truth:     The heart is again mildly enlarged. Mediastinal contours are stable. Patient is somewhat rotated. The lungs are hypoinflated with elevated left hemidiaphragm. XXXX XXXX opacities compatible with atelectasis. No large effusion is seen. There is no focal consolidation. Pulmonary vascularity is mildly accentuated. There are bilateral degenerative changes of the XXXX with probable chronic dislocation of the left humerus. Correlate clinically.
+[88/100] iu_xray_087
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally with no focal infiltrate pleural effusion or pneumothoraces Cardiomediastinal silhouette is within normal limits No acute bony abnormality
+  truth:     Normal heart size. Clear, hyperaerated lungs. No pneumothorax. No pleural effusion. XXXX substernal density may be related to a pectus deformity.
+[89/100] iu_xray_088
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The lungs are clear without evidence of focal airspace disease. There is no evidence of pneumothorax or large pleural effusion. The cardiac contour is within normal limits. Compared to prior exam, there is XXXX prominence of the mediastinal contour near the right hilum. This may represent the ascending aorta or mediastinal lymphadenopathy. CT chest with contrast may be helpful for further evaluation. There are mild degenerative changes of the thoracic spine.
+[90/100] iu_xray_089
+  generated: 1 No acute cardiopulmonary abnormality 2 No evidence of active tuberculosis Heart size and mediastinal contours appear within normal limits No focal airspace consolidation No pleural effusion or pneumothorax No acute bony abnormality
+  truth:     Heart size within normal limits. Stable position of left subclavian central venous catheter. No focal airspace disease. No pneumothorax. Mild blunting of the costophrenic XXXX bilaterally.
+[91/100] iu_xray_090
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Heart size and mediastinal contour are normal. Pulmonary vascularity is normal. Lungs are clear. No pleural effusions or pneumothoraces.
+[92/100] iu_xray_091
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     The lungs are clear bilaterally. Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion.. Cardio mediastinal silhouette is unremarkable. Visualized osseous structures of the thorax are without acute abnormality.
+[93/100] iu_xray_092
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart is normal in size. The mediastinum is Within normal limits the lungs are hypoinflated. There is mild increase in perihilar markings XXXX related to patient's history bronchitis. No acute infiltrate or pleural effusion are seen.
+[94/100] iu_xray_093
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Cardiac and mediastinal contours are within normal limits. The lungs are clear. Bony structures are intact.
+[95/100] iu_xray_094
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     Previous lower spine cervical fusion. Lungs are overall hyperexpanded with flattening of the diaphragms consistent with obstructive lung disease. Lungs are clear without focal consolidation. No pleural effusions or pneumothoraces. Heart and mediastinum of normal size and contour. Degenerative changes in the spine.
+[96/100] iu_xray_095
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart and mediastinum are unremarkable. There are two subcentimeter hyperdense nodular opacities are noted within the right lung. These may represent XXXX on end or alternatively, calcified granulomas. The lungs are clear without infiltrate. There is no effusion or pneumothorax.
+[97/100] iu_xray_096
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally No evidence of focal consolidation pneumothorax or pleural effusion Cardio mediastinal silhouette is unremarkable Visualized osseous structures of the thorax are without acute abnormality
+  truth:     The heart and mediastinum are unremarkable. There are two subcentimeter hyperdense nodular opacities are noted within the right lung. These may represent XXXX on end or alternatively, calcified granulomas. The lungs are clear without infiltrate. There is no effusion or pneumothorax.
+[98/100] iu_xray_097
+  generated: No acute cardiopulmonary abnormality The lungs are clear bilaterally Cardiac and mediastinal silhouettes are normal Pulmonary vasculature is normal No pneumothorax or pleural effusion No acute bony abnormality
+  truth:     The heart size and mediastinal silhouette are within normal limits. No pneumothorax or pleural effusions. The lungs are clear. No focal consolidations. The osseous structures are intact.
+[99/100] iu_xray_098
+  generated: 1 No acute cardiopulmonary disease 2 No evidence of acute tuberculosis The lungs appear clear The heart and pulmonary society of the mediastinum are normal The pleural spaces are clear The mediastinal contours are normal
+  truth:     The lungs are clear. There is hyperinflation of the lungs. There is no pleural effusion or pneumothorax. The heart and mediastinum are normal. The skeletal structures are normal.
+[100/100] iu_xray_099
+  generated: 1 No acute cardiopulmonary abnormality 2 No evidence of active tuberculosis Heart size and mediastinal contour are within normal limits Pulmonary vascularity is within normal Surgical clips are identified in the mediastinum No focal airspace consolidation No suspicious pulmonary opacity pleural effusion or pneumothorax
+  truth:     Stable postsurgical changes. Heart XXXX, mediastinum and lung XXXX are unremarkable. Stable calcified small granuloma in left base.
+
+Wrote 100 results to outputs/eval100_finetuned_sampling.jsonl
