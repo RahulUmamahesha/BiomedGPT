@@ -15,7 +15,6 @@ data/iu_xray_sample_100/*.png
 # OS/editor cruft
 .DS_Store
 .ipynb_checkpoints/
-
 .claude/
 
 # Colab-generated notebook metadata that changes on every run without real content changes
