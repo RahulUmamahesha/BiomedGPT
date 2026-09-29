@@ -1,19 +1,7 @@
 """
 Converts a fairseq-format OFA/BiomedGPT checkpoint (.pt) into this project's
-HF-transformers checkpoint layout, by renaming state_dict keys.
-
-Verified against checkpoints/instruct-biomedgpt-base (see conversation history):
-839/967 tensors already share identical names+shapes between the two formats.
-The remainder differ only by these submodule renames (fairseq -> HF):
-  decoder.layers.N.encoder_attn.*         -> decoder.layers.N.cross_attn.*
-  decoder.layers.N.encoder_attn_layer_norm.* -> decoder.layers.N.cross_attn_layer_norm.*
-  decoder.layers.N.cross_attn_ln.*        -> decoder.layers.N.cross_attn_mid_layer_norm.*
-  decoder.layers.N.self_attn_ln.*         -> decoder.layers.N.self_attn_mid_layer_norm.*
-  decoder.layers.N.ffn_layernorm.*        -> decoder.layers.N.ffn_layer_norm.*
-  encoder.layers.N.attn_ln.*              -> encoder.layers.N.self_attn_mid_layer_norm.*
-  encoder.layers.N.ffn_layernorm.*        -> encoder.layers.N.ffn_layer_norm.*
-plus two fairseq-only bookkeeping buffers with no HF counterpart, dropped:
-  encoder.version, decoder.version
+HF-transformers checkpoint layout by renaming state_dict keys (see RENAME_RULES)
+and dropping fairseq-only bookkeeping buffers with no HF counterpart.
 """
 import argparse
 import os

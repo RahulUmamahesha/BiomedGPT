@@ -1,16 +1,10 @@
 """
-Scores a run_pipeline.py output (JSONL of {generated_description, ground_truth_report, ...})
-against three angles:
-  - BLEU / ROUGE-L: standard text-overlap metrics.
-  - exact-duplicate rate: how often the exact same string gets generated for different images
-    (the mode-collapse symptom found in manual review).
-  - clinical keyword agreement: for a fixed list of CXR finding terms, whether the generated
-    text and the ground truth AGREE on whether that finding is present, absent (negated), or
-    unmentioned. This is negation-aware (checks a few words before each keyword hit for cues
-    like "no"/"without") because radiology text is dominated by negated findings ("no
-    pneumothorax") -- naive substring presence would massively overcount hallucinations.
-    This is a simple heuristic (a small preceding-word window), not full clinical NLP negation
-    detection (e.g. NegEx) -- it will misjudge negation scope in more complex sentences.
+Scores a run_pipeline.py output (JSONL of {generated_description, ground_truth_report, ...}).
+
+Keyword matching is negation-aware (checks preceding words for "no"/"without" etc.) since
+radiology text is dominated by negated findings -- naive substring presence would massively
+overcount hallucinations. It's a small-window heuristic, not full clinical NLP negation
+detection (e.g. NegEx), so it can misjudge negation scope in more complex sentences.
 """
 import argparse
 import json

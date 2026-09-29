@@ -13,11 +13,8 @@ IMAGE_STD = [0.5, 0.5, 0.5]
 
 DEVICE = "cpu"  # matches the CPU-only target environment; untested on MPS/CUDA
 
-# OFA's shared vocab packs image-codebook tokens (VQGAN codes, for image-generation tasks)
-# and bbox-bin tokens (for detection/grounding tasks) above the real text vocabulary.
-# Fairseq's own caption inference masks these out via `constraint_range`; this HF port's
-# plain generate() doesn't, so without this the model happily emits stray <code_NNNN>
-# tokens mid-caption. TEXT_VOCAB_SIZE is where real BPE text tokens end.
+# Where real BPE text ends in OFA's vocab; above this are image-codebook/bbox tokens
+# that generate() can otherwise emit mid-caption (fairseq masks these, this HF port doesn't).
 TEXT_VOCAB_SIZE = 50265
 
 GENERATION_PARAMS = {
@@ -26,10 +23,9 @@ GENERATION_PARAMS = {
     "max_length": 64,
 }
 
-# Alternative to beam search: nucleus sampling. Beam search always returns the single
-# highest-probability sequence, which is what let the iu-xray-finetuned checkpoint
-# collapse onto a handful of majority-template outputs; sampling explores lower-probability
-# (but still plausible) continuations instead.
+# Beam search always returns the single highest-probability sequence, which is what let
+# iu-xray-finetuned collapse onto a handful of majority-template outputs; sampling explores
+# lower-probability continuations instead.
 SAMPLING_GENERATION_PARAMS = {
     "do_sample": True,
     "num_beams": 1,
